@@ -3,7 +3,7 @@ CATEGORY_FILE = {
     "p2s": "petpets/names.txt"
               }
 
-def solve_jordle(category, letters, placement):
+def solve_jordle(category, letters=[], placement=[], nonletters=[]):
     if category not in CATEGORY_FILE:
         print("Category must be 'AC' or 'p2s' and is case sensitive.")
         return
@@ -17,16 +17,19 @@ def solve_jordle(category, letters, placement):
     print(all_names)
 
     for name in all_names:
-        if check_letters(name, letters) and check_order(name, placement):
+        if check_letters(name, letters, nonletters) and check_order(name, placement):
             names.append(name)
     
     print(f"Possible {category} names are {names}")
     return names
 
-def check_letters(word, letters):
+def check_letters(word, letters=[], nonletters=[]):
     for letter in letters:
         if letter.lower() not in word.lower():
             return False
+    for nonletter in nonletters:
+        if nonletter.lower() in word.lower():
+            return False    
     return True
 
 def check_order(word, placement):
@@ -39,3 +42,4 @@ def check_order(word, placement):
     return True
 
 # solve_jordle("AC", ["i", "k"], ["_", "i", "_", "_", "_"])
+solve_jordle("AC", ["t", "a", "i", "d"], ["_", "i", "t", "a", "_"], ["r"])
