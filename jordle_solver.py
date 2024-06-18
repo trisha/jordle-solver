@@ -41,5 +41,5 @@ def check_order(word, placement):
                 return False
     return True
 
-# solve_jordle("AC", ["i", "k"], ["_", "i", "_", "_", "_"])
+# category={"AC" | "p2s"}, included_letters=[], placement=["_", "_", "_", "_", "_"], excluded_letters=[]
 solve_jordle("AC", ["t", "a", "r"], ["_", "_", "_", "_", "_"], ["e", "s"])
