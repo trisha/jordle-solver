@@ -14,7 +14,7 @@ def solve_jordle(category, letters=[], placement=[], nonletters=[]):
         all_names = file.read().splitlines()
 
     names = [] 
-    print(all_names)
+    # print(all_names)
 
     for name in all_names:
         if check_letters(name, letters, nonletters) and check_order(name, placement):
@@ -42,4 +42,4 @@ def check_order(word, placement):
     return True
 
 # solve_jordle("AC", ["i", "k"], ["_", "i", "_", "_", "_"])
-solve_jordle("AC", ["t", "a", "i", "d"], ["_", "i", "t", "a", "_"], ["r"])
+solve_jordle("AC", ["t", "a", "r"], ["_", "_", "_", "_", "_"], ["e", "s"])
