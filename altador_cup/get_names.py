@@ -41,7 +41,7 @@ for url in urls:
     team_roster = get_team_roster(url)
     names.extend(team_roster)
 
-file_path = 'ac_names.txt'
+file_path = 'names.txt'
 
 def check_if_valid(line):
     res = []

@@ -20,12 +20,13 @@ Sometimes the category is "Altador Cup player" or "petpet", and there are some o
 - Edit the variables in the function call at bottom of `jordle_solver.py`
 - Run the `jordle_solver.py` file
 
-## To re-run the AC player names web scraper,
+## To update the AC player names,
 - In your terminal while in the project folder, run `python altador_cup/get_urls.py` to update the list of Altador Cup teams
-- Run `python altador_cup/get_names.py` to update the list of players on each team
+- Run `python altador_cup/get_names.py` to update `names.txt`, aka the list of players on each team whose names are 5 letters long
 
 ## To update the petpet names, 
-- Replicate the ChatGPT screenshot OCR process I outlined in `petpets/petpet_scraper.md`
+- Replicate the ChatGPT screenshot OCR process I outlined in `petpets/petpet_scraper.md` to update `petpets/raw_names.txt`
+- In your terminal while in the project folder, run `python get_names.py` to update `names.txt`, aka the list of petpet names that are 5 letters long
 
 # Coding Plan
 - Scrape AC player names that are 5L by visiting each [team](https://thedailyneopets.com/altador-cup/altador-cup-teams) and looking at the [roster](https://thedailyneopets.com/altador-cup/altador/) for each
