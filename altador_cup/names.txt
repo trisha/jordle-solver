@@ -11,7 +11,6 @@ Delma
 Ciona
 Broan
 Elbin
-Elbin
 Towse
 Palia
 Krell
@@ -22,6 +21,7 @@ Binay
 Fulse
 Meela
 Kitah
+Kitae
 Ditan
 Nitri
 Zayle

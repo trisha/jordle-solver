@@ -42,4 +42,6 @@ def check_order(word, placement):
     return True
 
 # category={"AC" | "p2s"}, included_letters=[], placement=["_", "_", "_", "_", "_"], excluded_letters=[]
-solve_jordle("AC", ["t", "a", "r"], ["_", "_", "_", "_", "_"], ["e", "s"])
+# solve_jordle("AC", ["t", "e", "a"], ["_", "_", "_", "_", "_"], ["r", "s", "l", "u", "n", "c", "h"]) # Note: Xila Kitae is missing cus she's a former player not listed on TDN, but is on JN https://bookofages.jellyneo.net/characters/141/
+solve_jordle("AC", ["t", "e", "a"], ["_", "_", "_", "_", "_"], [])
+# solve_jordle("p2s", ["t", "a", "l"], ["_", "_", "_", "_", "_"], ["e", "r", "s", "u", "n", "c", "h"])
